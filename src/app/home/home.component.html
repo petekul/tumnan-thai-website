@@ -1,0 +1,87 @@
+
+<app-hero></app-hero>
+
+<div class="section" role="main">
+    <h1>Tumnan Thai</h1>
+    <div class="subsection">
+
+        <div class="subsection-col info-aboutus">
+            <span>Hi! Bangkok is Wimbledon’s finest choice for authentic Thai cuisine. All of our family recipes have their roots right from the heart of Bangkok itself.</span><br/>
+            <span>We serve and a great variety of dishes ranging from the aromatic Satay skewers, our fragrant and creamy currys and our famous Phad Thai. </span><br/>
+            <span>Thai food is an exotic journey of the senses, created from a perfect blend of spices to bring you to a world of flavour and harmony.</span> 
+        </div>
+        <div class="subsection-col info-opening">
+            <h3>Opening Times</h3>
+            <span>Sun - Thu: 6:00 - 11:00pm</span>
+            <span>Fri - Sat: 6:00 - 11:30pm</span>
+            <button routerLink="/menu">See the Menu</button>
+            <button routerLink="/reservations">Book a Table</button>
+        </div>
+        <div class="subsection-col info-contact">
+            <span class="info-contact_phone">
+                <i class="material-icons">phone</i> <a href="tel:02085425688">02085425688</a>
+            </span>
+            <span class="info-contact_mail">
+                <i class="material-icons">email</i> <a href="mailto:hibkk@aol.com">hibkk@aol.com</a>
+            </span>
+            <span class="info-contact_location">
+                <i class="material-icons">room</i> <a href="https://www.google.com/maps/place/Hi+Bangkok,+132+Kingston+Rd,+London+SW19+1LY/@51.4149097,-0.2001869,15z/data=!4m2!3m1!1s0x487608bca72c9e07:0x8833fccc162408f7" target="_blank">132 Kingston Road, SW19 1LY - London</a>
+            </span>
+        </div>
+    </div>
+</div>
+
+<app-banner [image]="'img-satay'"></app-banner>
+
+<div class="section">
+    
+    <div class="subsection">
+        <div class="subsection-col info-reservations">
+            <h1>Table Reservations</h1>
+            <div class="info-reservations-text">
+                <span>For takeaways and deliveries, </span>
+                <span>Please call: <a [href]="'tel:' + 02085425688">02085425688</a></span>
+                <span>or book on:</span>
+            </div>
+            <iframe src="https://widget.quandoo.co.uk/widget/reservation/merchant/pXhTT?sid=2" width="310" height="342" seamless="seamless" scrolling="no" frameborder="0"></iframe>
+    
+        </div>
+        <div class="subsection-col info-takeaway">
+            <h1>Takeaways & Delivery</h1>
+                <div class="info-takeaway-text">
+                    <span>For takeaways and deliveries, </span>
+                    <span>Please call: <a [href]="'tel:' + 02085425688">02085425688</a></span>
+                    <span>or order on:</span>
+                </div>
+                <a href="https://www.just-eat.co.uk/restaurants-tumnanthai-sw11/menu">
+                    <img alt="just-eat" src="./../../assets/images/just-eat.jpg" width="80">
+                </a>
+                <a href="https://deliveroo.co.uk/menu/london/lavender-hill/tumnan-thai-restaurant">
+                    <img alt="deliveroo" src="./../../assets/images/deliveroo.png" width="80">
+                </a>
+        </div>
+    </div>
+</div>
+
+<app-banner [image]="'img-green-curry'"></app-banner>
+
+<div class="section">
+    <h1 id="booking">Find us Here</h1>
+    <div class="subsection">
+        <div class="subsection-col info-contact info-map-contact">
+            <span class="info-contact_phone">
+                <i class="material-icons">phone</i> <a href="tel:02085425688">02085425688</a>
+            </span>
+            <span class="info-contact_mail">
+                <i class="material-icons">email</i> <a href="mailto:hibkk@aol.com">hibkk@aol.com</a>
+            </span>
+            <span class="info-contact_location">
+                <i class="material-icons">room</i> <a href="https://www.google.com/maps/place/Hi+Bangkok,+132+Kingston+Rd,+London+SW19+1LY/@51.4149097,-0.2001869,15z/data=!4m2!3m1!1s0x487608bca72c9e07:0x8833fccc162408f7" target="_blank">132 Kingston Road, SW19 1LY - London</a>
+            </span>
+        </div>
+        <div class="subsection-col info-map">
+            <iframe width="100%" height="100%" id="gmap_canvas" src="https://maps.google.com/maps?q=hi%20bangkok%20london&t=&z=15&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+        </div>
+    </div>
+</div>
+<app-footer></app-footer>

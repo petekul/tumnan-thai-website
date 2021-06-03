@@ -1,0 +1,36 @@
+.banner {
+    height: 16rem;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    clip-path: polygon(0 0, 100% 40%, 100% 100%, 0 60%);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    &-title{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+.img{
+    &-home-curry{
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./../../assets/images/home-curry.jpg');
+    }
+    &-green-curry{
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./../../assets/images/green-curry.jpg');
+    } 
+    &-yellow-curry{
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./../../assets/images/yellow-curry.jpg');
+    }   
+    &-thai-basil{
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./../../assets/images/thai-basil.jpg');
+    }
+    &-satay{
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./../../assets/images/satay.jpg');
+    }    
+    &-phad-thai{
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./../../assets/images/phad-thai.jpg');
+    }
+}

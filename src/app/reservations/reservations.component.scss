@@ -1,0 +1,68 @@
+@use './../../stylesheet.scss' as styles;
+
+.reservations {
+    &-info {
+        display: flex;
+        flex-direction: column;
+        padding: 0 4rem;
+        
+        & h1 {
+            color: styles.$color-dark-red;
+        }
+        & span {
+            margin: .1rem 0;
+            & a {
+                font-weight: 700;
+                padding: 1rem;
+            }
+        }
+        &-text {
+            display: flex;
+            flex-direction: column;
+            margin: 2rem 0;
+        }
+    }
+    
+    &-map {
+        min-height: 32rem;
+        min-width: 32rem;
+        padding: 1rem;
+        display: grid;
+    }
+}
+
+@media (max-width: styles.$screen-size-md) {
+    .reservations {
+        display: block;
+        &-info {
+            align-items: center;
+            & span {
+                & a {
+                    padding: 0;
+                    padding-right: .25rem;
+                }
+            }
+        }
+        &-map {
+            min-height: 26rem;
+            min-width: 26rem;
+            margin: 4rem 0;
+        }
+    }
+}
+
+@media (max-width: styles.$screen-size-sm) {
+    .reservations {
+        width: 90%;
+        &-info { 
+            & h1 {
+                min-width: 20rem;
+            }
+        }
+        &-map {
+            display: grid;
+            min-height: 16rem;
+            min-width: 16rem;
+        }
+    }
+}

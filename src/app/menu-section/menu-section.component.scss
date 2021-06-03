@@ -1,0 +1,68 @@
+@use './../../stylesheet.scss' as styles;
+.menu-item {
+    &_header {
+        margin-top: 2rem;
+    }
+    &-container {
+        display: flex;
+    }
+    &-subcontainer-left {
+        flex-grow: 5;
+        flex-basis: 0;
+    }
+    &-subcontainer-right {
+        flex-grow: 2;
+        flex-basis: 0;
+    }
+    &_number {
+        display: inline-block;
+        font-weight: 400;
+        padding-right: 0.25rem;
+    }
+    &_title {
+        display: inline-block;
+    }
+    &_description {
+        flex-grow: 5;
+        flex-basis: 0;
+        padding-left: 1rem;
+        margin-bottom: .5rem;
+    }
+    &_prices {
+        flex-grow: 2;
+        flex-basis: 0;
+        text-align: end;
+        display: flex;
+        justify-content: flex-end;
+        &-option {
+            display: inline;
+            padding-left: 1rem;
+            font-weight: 600;
+            padding-top: .5rem;
+            min-width: 5rem;
+        }
+    }
+    &_price {
+        flex-grow: 2;
+        flex-basis: 0;
+        display: inline;
+        text-align: end;
+        font-weight: 700;
+        padding-top: .5rem;
+    }
+}
+
+@media (max-width: styles.$screen-size-md) {
+    
+    .menu-item {
+        &_prices {
+            &-option {
+                padding-left: 0;
+                padding-right: .25rem;
+            }
+        }
+        &_price {
+            max-width: 3rem;
+        }
+    }
+}

@@ -1,0 +1,74 @@
+
+<app-hero></app-hero>
+
+<div class="section" role="main">
+    <h1>MENU</h1>
+    <div class="menu subsection">
+        <div class="menu-item subsection-col" >
+            <app-menu-section [section]="findSection('Starters')"></app-menu-section>
+        </div>
+        <div class="menu-item subsection-col">
+            <app-menu-section [section]="findSection('Soups')"></app-menu-section>
+            <app-menu-section [section]="findSection('Thai Style Salads')"></app-menu-section>
+        </div>
+    </div>
+</div>
+
+<app-banner [image]="'img-satay'"></app-banner>
+
+<div class="section">
+    <div class="menu subsection">
+        <div class="menu-item subsection-col" >
+            <app-menu-section [section]="findSection('Chicken')"></app-menu-section>
+        </div>
+        <div class="menu-item subsection-col">
+            <app-menu-section [section]="findSection('Pork')"></app-menu-section>
+            <app-menu-section [section]="findSection('Beef')"></app-menu-section>
+        </div>
+    </div>
+</div>
+
+<app-banner [image]="'img-thai-basil'"></app-banner>
+
+<div class="section">
+    <div class="menu subsection">
+        <div class="menu-item subsection-col" >
+            <app-menu-section [section]="findSection('Seafood')"></app-menu-section>
+        </div>
+        <div class="menu-item subsection-col">
+            <app-menu-section [section]="findSection('Curry')"></app-menu-section>
+            <app-menu-section [section]="findSection('Vegetables')"></app-menu-section>
+        </div>
+    </div>
+</div>
+
+<app-banner [image]="'img-green-curry'"></app-banner>
+
+<div class="section">
+    <div class="menu subsection">
+        <div class="menu-item subsection-col" >
+            <app-menu-section [section]="findSection('Noodles')"></app-menu-section>
+            <app-menu-section [section]="findSection('Rice')"></app-menu-section>
+        </div>
+        <div class="menu-item subsection-col">
+            <app-menu-section [section]="findSection('Chef\'s recommendations')"></app-menu-section>
+        </div>
+    </div>
+</div>
+
+<app-banner [image]="'img-phad-thai'"></app-banner>
+
+<div class="section">
+    <div class="menu subsection">
+        <div class="menu-item subsection-col" >
+            <app-menu-section [section]="findSection('Vegetarian Starters')"></app-menu-section>
+            <app-menu-section [section]="findSection('Vegetarian Soup')"></app-menu-section>
+        </div>
+        <div class="menu-item subsection-col">
+            <app-menu-section [section]="findSection('Vegetarian Mains')"></app-menu-section>
+            <app-menu-section [section]="findSection('Vegetarian Noodles')"></app-menu-section>
+        </div>
+    </div>
+</div>
+
+<app-footer></app-footer>

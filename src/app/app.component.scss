@@ -1,0 +1,39 @@
+@use './../stylesheet.scss' as styles;
+
+
+
+:host {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: 'Maven Pro';
+  font-size: 14px;
+  color: #555;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+body {
+  margin: 0;
+  background-color: #FAFAFA;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 8px 0;
+  color: styles.$color-dark-red;
+}
+
+h5 {
+  font-size: styles.$font-size-sm;
+}
+
+p {
+  margin: 0;
+}
+
+.material-icons {
+  color: styles.$color-dark-red;
+}
+

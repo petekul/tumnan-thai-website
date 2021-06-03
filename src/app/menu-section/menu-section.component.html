@@ -1,0 +1,22 @@
+
+<h3 class="menu-item_header">{{section.category}}</h3>
+<div *ngFor="let item of section.items">
+   
+    <div class="menu-item-container">
+        <div class="menu-item-subcontainer-left">
+            <span> 
+                <h4 class="menu-item_number">{{item.number}}. </h4> 
+                <h4 class="menu-item_title"> {{item.title}}</h4> 
+            </span>
+            <div class="menu-item_description">{{item.description}}</div>
+        </div>
+        <div class="menu-item-subcontainer-right" *ngIf="item.prices?.length">
+            <div class="menu-item_prices" *ngFor="let choice of item.prices as PriceOption"> 
+                <div class="menu-item_prices-option">{{choice.option}}</div>
+                <div class="menu-item_price">£{{choice.price}}</div>
+            </div>
+        </div>
+
+        <div class="menu-item_price" *ngIf="item.price">£{{item.price}}</div>
+    </div>
+</div>

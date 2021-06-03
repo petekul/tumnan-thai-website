@@ -1,0 +1,15 @@
+{
+  "providers": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-hibkkwebsite-dev-150241-authRole",
+      "UnauthRoleArn": "arn:aws:iam::407567589494:role/amplify-hibkkwebsite-dev-150241-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::407567589494:role/amplify-hibkkwebsite-dev-150241-authRole",
+      "Region": "eu-west-2",
+      "DeploymentBucketName": "amplify-hibkkwebsite-dev-150241-deployment",
+      "UnauthRoleName": "amplify-hibkkwebsite-dev-150241-unauthRole",
+      "StackName": "amplify-hibkkwebsite-dev-150241",
+      "StackId": "arn:aws:cloudformation:eu-west-2:407567589494:stack/amplify-hibkkwebsite-dev-150241/ba90b590-ae73-11eb-b2ca-06bde925aca8",
+      "AmplifyAppId": "d2cwawmcu0yqbb"
+    }
+  }
+}

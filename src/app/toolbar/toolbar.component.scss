@@ -1,0 +1,42 @@
+@use '../../stylesheet.scss' as styles;
+
+  .spacer {
+    flex: 1;
+  }
+
+  .toolbar {
+    position:sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    background-color: styles.$color-black;
+    color: black;
+    font-weight: 600;
+    padding:0 2rem;
+    z-index: 1;
+    &-link {
+        margin: 0 1rem;
+    }
+  }
+
+  .toolbar img {
+    margin: 0 1rem;
+    height: 4rem;
+  }
+
+  .toolbar a {
+    color: styles.$color-red;
+    font-size: styles.$font-size;
+  }
+
+  @media (max-width: styles.$screen-size-sm) {
+    .toolbar {
+      padding: 0;
+      &-reservations{
+        display: none;
+      }
+    }
+  }

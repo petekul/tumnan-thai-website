@@ -1,0 +1,34 @@
+@use './../../stylesheet.scss' as styles;
+
+.menu {
+    width: 90%;
+    &-item {
+        padding: 2rem;
+        & h4 {
+            margin-top: 1rem;
+            margin-bottom: 0;
+        }
+        & span {
+            display: flex;
+        }
+    }
+}
+
+
+@media (max-width: styles.$screen-size-md) {
+    .menu { 
+        display: block;
+        &-item {
+            padding: 1rem;
+        }
+    }
+}
+
+
+@media (max-width: styles.$screen-size-sm) {
+    .menu {
+        &-item {
+            padding: 1rem;
+        }
+    }
+}
