@@ -3,6 +3,7 @@ $color-red: #cd0b0b;
 $color-dark-red: #b00d0b;
 $color-white: #f7f5f5;
 $color-black: #000;
+$color-grey: #555555;
 $font-size-sm: 12px;
 $font-size: 16px;
 $font-size-md: 20px;
@@ -293,7 +294,7 @@ h1 {
     height: 4rem;
     display: flex;
     align-items: center;
-    background-color: styles.$color-black;
+    background-color: styles.$color-white;
     color: black;
     font-weight: 600;
     padding:0 2rem;
@@ -301,10 +302,14 @@ h1 {
     &-link {
         margin: 0 1rem;
     }
+    box-shadow: 0 3px 4px -2px styles.$color-grey;
   }
 .toolbar img {
     margin: 0 1rem;
-    height: 4rem;
+    height: 3.5rem;
+    &:hover{
+      cursor: pointer;
+    }
   }
 .toolbar a {
     color: styles.$color-red;
@@ -345,7 +350,7 @@ h1 {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 0;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('restaurant.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('somtum.jpeg');
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85%);
             clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85%);
 
@@ -356,6 +361,17 @@ h1 {
         color: white;
         font-size: 3rem;
         font-family: 'Kalam';
+    }
+}
+.img{
+    &-somtum{
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('somtum.jpeg');
+    }
+    &-starter{
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('starter.jpeg');
+    }
+    &-table{
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('table.jpeg');
     }
 }
 @media (max-width: styles.$screen-size-md) {
@@ -390,6 +406,26 @@ h1 {
     }
 }
 .img{
+
+    &-tomyum{
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('tomyum.jpg');
+    }
+    &-greencurry{
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('greencurry.jpg');
+    }
+    &-padthai{
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('padthai.jpg');
+    }
+    &-somtum{
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('somtum.jpg');
+    }
+    &-food{
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('food.jpg');
+    }
+    &-upstairs{
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('upstairs.png');
+    }
+
     &-home-curry{
         background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('home-curry.jpg');
     }
