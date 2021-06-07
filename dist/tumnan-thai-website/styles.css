@@ -1,0 +1,479 @@
+/*Global*/
+$color-red: #cd0b0b;
+$color-dark-red: #b00d0b;
+$color-white: #f7f5f5;
+$color-black: #000;
+$font-size-sm: 12px;
+$font-size: 16px;
+$font-size-md: 20px;
+$font-size-lg: 24px;
+$screen-size-sm: 680px;
+$screen-size-md: 1024px;
+@use './../stylesheet.scss' as styles;
+:host {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: 'Maven Pro';
+  font-size: 14px;
+  color: #555;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+body {
+  margin: 0;
+  background-color: #FAFAFA;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 8px 0;
+  color: styles.$color-dark-red;
+}
+h5 {
+  font-size: styles.$font-size-sm;
+}
+p {
+  margin: 0;
+}
+.material-icons {
+  color: styles.$color-dark-red;
+}
+/* Pages */
+@use './../../stylesheet.scss' as styles;
+h1 {
+    color: styles.$color-dark-red;
+}
+.section {
+    display: flex;
+    margin: auto;
+    padding: 0 1rem;
+    flex-direction: column;
+    align-items: center;
+}
+.subsection {
+    display: flex;
+    justify-content: space-evenly;
+    &-col{
+        flex-grow: 1;
+        flex-basis: 0;
+        padding: 4rem;
+        & h1 {
+            margin-bottom: 2rem;
+        }
+    }
+    span {
+        display: block;
+    }
+}
+.info {
+    &-opening {
+        text-align: center;
+        & h3 {
+            margin-bottom: 1.5rem;
+        }
+        & span {
+            font-size: styles.$font-size-md;
+            &:first-of-type {
+                margin-bottom: .5rem;
+            }
+        }
+        & button {
+            &:first-of-type {
+                margin-top: 2rem;
+            }
+            display:inline-block;
+            padding:1rem;
+            min-width: 10rem;
+            margin:1rem;
+            border:.1rem solid #8C0A08;
+            border-radius:.5rem;
+            box-sizing: border-box;
+            text-decoration:none;
+            font-weight:700;
+            color:white;
+            text-shadow: 0 0.04em 0.04em rgba(0,0,0,0.35);
+            text-align:center;
+            transition: all 0.2s;
+            background-color: styles.$color-dark-red;
+            &:hover{
+                background-color: styles.$color-red;
+            }
+        }
+    }
+    &-contact{
+        & span {
+            margin: 2rem 0;
+            display: flex;
+            align-items: center;
+            font-size: styles.$font-size-md;
+        }
+        & i {
+            color: styles.$color-dark-red;
+            margin-right: .5rem;
+        }
+    }
+    &-takeaway {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        & img {
+            width: 12rem;
+            margin-top: 2rem;
+        }
+        & a {
+            font-weight: 700;
+        }
+    }
+    &-reservations {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        &-text {
+            margin-bottom: 2rem;
+        }
+        & a {
+            font-weight: 700;
+        }
+    }
+    &-map {
+        min-height: 32rem;
+        min-width: 32rem;
+        padding: 1rem;
+        &-contact {
+            display: flex;
+            flex-direction: column;
+            padding: 1rem;
+            span {
+                margin: 1rem 0;
+            }
+        }
+    }
+}
+@media (max-width: styles.$screen-size-md) {
+    .subsection {
+        &-col{
+            padding: 1rem;
+        }
+    }
+
+    .info {
+        &-map{
+            min-height: 26rem;
+            min-width: 26rem;
+            margin: 4rem 0;
+        }
+    }
+}
+@media (max-width: styles.$screen-size-sm) {
+    .subsection { 
+        display: block;
+        &-col{
+            padding: 1rem;
+        }
+    }
+
+    .info {
+        &-contact {
+            padding: 1rem 5rem;
+        }
+        &-map {
+            display: grid;
+            min-height: 20rem;
+            min-width: 20rem;
+        }
+    }
+}
+@use './../../stylesheet.scss' as styles;
+.menu {
+    width: 90%;
+    &-item {
+        padding: 2rem;
+        & h4 {
+            margin-top: 1rem;
+            margin-bottom: 0;
+        }
+        & span {
+            display: flex;
+        }
+    }
+}
+@media (max-width: styles.$screen-size-md) {
+    .menu { 
+        display: block;
+        &-item {
+            padding: 1rem;
+        }
+    }
+}
+@media (max-width: styles.$screen-size-sm) {
+    .menu {
+        &-item {
+            padding: 1rem;
+        }
+    }
+}
+@use './../../stylesheet.scss' as styles;
+.reservations {
+    &-info {
+        display: flex;
+        flex-direction: column;
+        padding: 0 4rem;
+        
+        & h1 {
+            color: styles.$color-dark-red;
+        }
+        & span {
+            margin: .1rem 0;
+            & a {
+                font-weight: 700;
+                padding: 1rem;
+            }
+        }
+        &-text {
+            display: flex;
+            flex-direction: column;
+            margin: 2rem 0;
+        }
+    }
+    
+    &-map {
+        min-height: 32rem;
+        min-width: 32rem;
+        padding: 1rem;
+        display: grid;
+    }
+}
+@media (max-width: styles.$screen-size-md) {
+    .reservations {
+        display: block;
+        &-info {
+            align-items: center;
+            & span {
+                & a {
+                    padding: 0;
+                    padding-right: .25rem;
+                }
+            }
+        }
+        &-map {
+            min-height: 26rem;
+            min-width: 26rem;
+            margin: 4rem 0;
+        }
+    }
+}
+@media (max-width: styles.$screen-size-sm) {
+    .reservations {
+        width: 90%;
+        &-info { 
+            & h1 {
+                min-width: 20rem;
+            }
+        }
+        &-map {
+            display: grid;
+            min-height: 16rem;
+            min-width: 16rem;
+        }
+    }
+}
+/* Components */
+@use '../../stylesheet.scss' as styles;
+.spacer {
+    flex: 1;
+  }
+.toolbar {
+    position:sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    background-color: styles.$color-black;
+    color: black;
+    font-weight: 600;
+    padding:0 2rem;
+    z-index: 1;
+    &-link {
+        margin: 0 1rem;
+    }
+  }
+.toolbar img {
+    margin: 0 1rem;
+    height: 4rem;
+  }
+.toolbar a {
+    color: styles.$color-red;
+    font-size: styles.$font-size;
+  }
+@media (max-width: styles.$screen-size-sm) {
+    .toolbar {
+      padding: 0;
+      &-reservations{
+        display: none;
+      }
+    }
+  }
+.footer {
+    height: 16rem;
+    width: 100vw;
+    background-color: grey;
+    display: flex;
+    justify-content: center;
+    -webkit-clip-path: polygon(0 0, 100% 40%, 100% 100%, 0 100%);
+            clip-path: polygon(0 0, 100% 40%, 100% 100%, 0 100%);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('footer.jpg');
+    background-position: center;
+
+    &-title{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+@use './../../stylesheet.scss' as styles;
+.hero {
+    height: 44rem;
+    width: 100vw;
+    background-color: grey;
+    display: flex;
+    justify-content: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 0;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('restaurant.jpg');
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85%);
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85%);
+
+    &-title{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        font-size: 3rem;
+        font-family: 'Kalam';
+    }
+}
+@media (max-width: styles.$screen-size-md) {
+    .hero {
+        &-title {
+            text-align: center;
+            padding: 4rem;
+        }
+    }
+}
+@media (max-width: styles.$screen-size-sm) {
+    .hero {
+        &-title {
+            text-align: center;
+        }
+    }
+}
+.banner {
+    height: 16rem;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    -webkit-clip-path: polygon(0 0, 100% 40%, 100% 100%, 0 60%);
+            clip-path: polygon(0 0, 100% 40%, 100% 100%, 0 60%);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    &-title{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+.img{
+    &-home-curry{
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('home-curry.jpg');
+    }
+    &-green-curry{
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('green-curry.jpg');
+    } 
+    &-yellow-curry{
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('yellow-curry.jpg');
+    }   
+    &-thai-basil{
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('thai-basil.jpg');
+    }
+    &-satay{
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('satay.jpg');
+    }    
+    &-phad-thai{
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('phad-thai.jpg');
+    }
+}
+@use './../../stylesheet.scss' as styles;
+.menu-item {
+    &_header {
+        margin-top: 2rem;
+    }
+    &-container {
+        display: flex;
+    }
+    &-subcontainer-left {
+        flex-grow: 5;
+        flex-basis: 0;
+    }
+    &-subcontainer-right {
+        flex-grow: 2;
+        flex-basis: 0;
+    }
+    &_number {
+        display: inline-block;
+        font-weight: 400;
+        padding-right: 0.25rem;
+    }
+    &_title {
+        display: inline-block;
+    }
+    &_description {
+        flex-grow: 5;
+        flex-basis: 0;
+        padding-left: 1rem;
+        margin-bottom: .5rem;
+    }
+    &_prices {
+        flex-grow: 2;
+        flex-basis: 0;
+        text-align: end;
+        display: flex;
+        justify-content: flex-end;
+        &-option {
+            display: inline;
+            padding-left: 1rem;
+            font-weight: 600;
+            padding-top: .5rem;
+            min-width: 5rem;
+        }
+    }
+    &_price {
+        flex-grow: 2;
+        flex-basis: 0;
+        display: inline;
+        text-align: end;
+        font-weight: 700;
+        padding-top: .5rem;
+    }
+}
+@media (max-width: styles.$screen-size-md) {
+    
+    .menu-item {
+        &_prices {
+            &-option {
+                padding-left: 0;
+                padding-right: .25rem;
+            }
+        }
+        &_price {
+            max-width: 3rem;
+        }
+    }
+}
+

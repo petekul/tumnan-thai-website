@@ -8,7 +8,6 @@ import { Component, Input, OnInit } from '@angular/core';
 
 export class BannerComponent implements OnInit {
   @Input() image: string = "";
-
   constructor() { }
 
   ngOnInit(): void {
