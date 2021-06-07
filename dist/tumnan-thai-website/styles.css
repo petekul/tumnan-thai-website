@@ -350,7 +350,7 @@ h1 {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 0;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('somtum.jpeg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('somtum.jpg');
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85%);
             clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85%);
 
@@ -366,7 +366,7 @@ h1 {
 }
 .img{
     &-somtum{
-        background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('somtum.jpeg');
+        background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('somtum.jpg');
     }
     &-starter{
         background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('starter.jpeg');
@@ -426,7 +426,7 @@ h1 {
         background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('padthai.jpeg');
     }
     &-somtum{
-        background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('somtum.jpeg');
+        background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('somtum.jpg');
     }
     &-food{
         background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('food.jpg');
