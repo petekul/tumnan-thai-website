@@ -331,7 +331,7 @@ h1 {
     justify-content: center;
     -webkit-clip-path: polygon(0 0, 100% 40%, 100% 100%, 0 100%);
             clip-path: polygon(0 0, 100% 40%, 100% 100%, 0 100%);
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('footer.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('footer.jpg');
     background-position: center;
 
     &-title{
@@ -350,7 +350,7 @@ h1 {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 0;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('somtum.jpeg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('somtum.jpeg');
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85%);
             clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85%);
 
@@ -361,17 +361,21 @@ h1 {
         color: white;
         font-size: 3rem;
         font-family: 'Kalam';
+        text-shadow: 1px 1px #1a1a1a;
     }
 }
 .img{
     &-somtum{
-        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('somtum.jpeg');
+        background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('somtum.jpeg');
     }
     &-starter{
-        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('starter.jpeg');
+        background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('starter.jpeg');
     }
     &-table{
-        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('table.jpeg');
+        background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('table.jpeg');
+    }
+    &-restaurant{
+        background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('restaurant-front.jpg');
     }
 }
 @media (max-width: styles.$screen-size-md) {
@@ -386,6 +390,11 @@ h1 {
     .hero {
         &-title {
             text-align: center;
+        }
+    }
+    .img{
+        &-somtum{
+            background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('somtum-mob.jpeg');
         }
     }
 }
@@ -408,41 +417,41 @@ h1 {
 .img{
 
     &-tomyum{
-        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('tomyum.jpg');
+        background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('tomyum.jpeg');
     }
     &-greencurry{
-        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('greencurry.jpg');
+        background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('greencurry.jpeg');
     }
     &-padthai{
-        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('padthai.jpg');
+        background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('padthai.jpeg');
     }
     &-somtum{
-        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('somtum.jpg');
+        background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('somtum.jpeg');
     }
     &-food{
-        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('food.jpg');
+        background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('food.jpg');
     }
     &-upstairs{
-        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('upstairs.png');
+        background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('upstairs.png');
     }
 
     &-home-curry{
-        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('home-curry.jpg');
+        background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('home-curry.jpg');
     }
     &-green-curry{
-        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('green-curry.jpg');
+        background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('green-curry.jpg');
     } 
     &-yellow-curry{
-        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('yellow-curry.jpg');
+        background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('yellow-curry.jpg');
     }   
     &-thai-basil{
-        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('thai-basil.jpg');
+        background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('thai-basil.jpg');
     }
     &-satay{
-        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('satay.jpg');
+        background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('satay.jpg');
     }    
     &-phad-thai{
-        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('phad-thai.jpg');
+        background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('phad-thai.jpg');
     }
 }
 @use './../../stylesheet.scss' as styles;
@@ -456,6 +465,9 @@ h1 {
     &-subcontainer-left {
         flex-grow: 5;
         flex-basis: 0;
+        &__title {
+            display: flex;
+        }
     }
     &-subcontainer-right {
         flex-grow: 2;
